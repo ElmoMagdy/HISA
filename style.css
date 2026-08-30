@@ -1,0 +1,351 @@
+body {
+    background-image:
+        linear-gradient(
+            120deg,
+            transparent 0%,
+            rgba(255,255,255,0.025) 45%,
+            transparent 46%
+        ),
+        linear-gradient(
+            300deg,
+            transparent 0%,
+            rgba(255,255,255,0.02) 45%,
+            transparent 46%
+        ),
+        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px),
+        radial-gradient(circle at 20% 20%, rgba(0,120,255,0.20), transparent 30%),
+        radial-gradient(circle at 80% 80%, rgba(255,30,60,0.18), transparent 30%),
+        linear-gradient(135deg, #030712, #0b1120, #020617);
+
+    background-size:
+        500px 500px,
+        500px 500px,
+        60px 60px,
+        60px 60px,
+        auto,
+        auto,
+        auto;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+
+    width: 700px;
+    height: 700px;
+
+    top: -350px;
+    right: -250px;
+
+    border: 2px solid rgba(0, 120, 255, 0.12);
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 80px rgba(0, 120, 255, 0.12);
+
+    z-index: -1;
+}
+body::after {
+    content: "";
+    position: fixed;
+
+    width: 500px;
+    height: 500px;
+
+    bottom: -250px;
+    left: -200px;
+
+    border: 2px solid rgba(255, 30, 60, 0.12);
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 80px rgba(255, 30, 60, 0.12);
+
+    z-index: -1;
+}
+header img{
+    width:160px;
+}
+header{
+    display: flex;
+    justify-content:center;
+    position: relative;
+}
+.menu-button{
+    position: absolute;
+    left: 7px;
+    top:7px;
+    
+    width:55px;
+    height:55px;
+    color: white;
+
+    z-index:1001;
+}
+.menu-button{
+    font-size:24px;
+    padding:8px;
+    background: rgb(94, 4, 64);
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+.menu-button:hover{
+    transform:scale(1.1);
+}
+.menu{
+   display:none;
+    flex-direction:column;
+    position:absolute;
+    left:7px;
+    top:60px;
+    background:#666;
+    padding:10px;
+    border-radius:12px;
+    width:180px;
+    min-height:250px;
+    gap:38px;
+    z-index:9999;
+
+}
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-size: 18px;
+    padding:10px;
+    border-radius:8px;
+}
+.menu a:hover{
+    background:#222;
+}
+.hero{
+    text-align:center;
+    padding:80px 20px;
+}
+.hero h1 {
+    font-size:62px;
+    margin-bottom:15px;
+    color:#00aaff;
+
+    text-shadow:
+    0 0 10px rgba(225, 225, 225, 0.2),
+    0 0 30px rgba(0, 100, 225, 0.25);
+}
+
+.hero p{
+    font-size:18px;
+    line-height:1.6;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    margin-top: auto;
+    text-align: center;
+    padding: 20px;
+}
+.about{
+    color: white;
+    text-align: center;
+    padding:50px 20px;
+    max-width:800px;
+    margin: 40px auto;
+    background: #111;
+    border-radius: 16px;
+    box-shadow:0 8px 25px rgba(0, 0, 1, 1);
+    border: 1px solid rgba(225, 225, 225, 0.08);
+    backdrop-filter: bulr(10px);
+
+    transition: transform 0.3, box-shadow 0.3;
+}
+
+.about h2{
+    font-size:52px;
+    margin-bottom:20px;
+}
+.about p{
+    font-size:32 px;
+    line-height: 1.7;
+    margin-bottom:15ox;
+}
+.news{
+    text-align:center;
+    padding:40px 30px;
+    max-width:800px;
+    background:#125bf8;
+    border-radius:16px;
+    box-shadow:0 8px 25px rgb(32, 3, 138);
+    margin:40px auto
+}
+.news h2 {
+    font-size:52px;
+    margin-bottom:20px;
+}
+
+.news-card img{
+    display:block;
+    width:350px;
+    max-width:100%;
+    height:450px;
+    object-fit:cover;
+    margin:0 auto 25px;
+    border-radius:12px;
+}
+.news-card h3{
+    font-size:35px;
+    margin-bottom:12px;
+}
+.news-card p{
+    font-size:25px;
+    line-height:1.7;
+}
+.news1{
+    text-align:center;
+    padding:25px 30px;
+    max-width:800px;
+    margin:40px auto;
+    background:#18b802;
+    border-radius:16px;
+    box-shadow:0 8px 25px rgb(1, 68, 4);
+}
+.news1 h2{
+    font-size:52px;
+    margin-bottom:20px;
+}
+.news1 img{
+    display:block;
+    width:350px;
+    height:450px;
+    object-fit:cover;
+    margin:0 auto 25px;
+    border-radius:12px;
+}
+.news1 h3{
+    font-size:35px;
+    margin-bottom:12px;
+}
+.news1 p{
+    font-size:25px;
+    line-height:1.7;
+}
+.tournament-name h3{
+    font-size:25px;
+    margin-bottom:12px;
+
+}
+.player-card{
+    width: 350px;
+    padding:25px;
+    margin:40px auto;
+    text-align:center;
+    background:#f10707;
+    border: 1px solid rgba(225, 225, 225, 0.12);
+    border-radius: 16px;
+    box-shadow:0 10px 30px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.player-card img{
+    width:350px;
+    height:450px;
+    object-fit:cover;
+    border-radius:12px;
+    margin-bottom:15px;
+}
+
+.player-card h2{
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.player-card p{
+    font-size:17px;
+    margin:8px 0;
+}
+.players-container{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:25px;
+    max-width:1200px;
+    margin:250px auto;
+    padding:20px;
+    transform:translateX(-235px);
+}
+.player-card{
+    transition: transform 0.2s;
+}
+.player-card:active{
+    transform: scale(0.95);
+}
+.player-card:hover{
+    transform: scale(1.08) translateY(-5px);
+    box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.5);
+}
+body{
+    animation: pagein 0.5s ease;
+}
+@keyframes pagein{
+    form{
+        opacity:0;
+        transform:translateY(15px);
+    }
+    to{
+        opacity:1;
+        transform:tranlateY(0);
+    }
+}
+.red{
+    background:#f10707;
+}
+.blue{
+    background:#125bf8;
+}
+.green{
+    background:#18b802;
+}
+.purple{
+    background:#5315b8;
+}
+.coming-soon {
+    font-size: 45px;
+    font-weight: bold;
+    color: #00aaff;
+    text-align: center;
+    text-shadow: 0 0 20px rgba(0, 170, 255, 0.7);
+    margin-bottom: 10px;
+}
+
+.unavailable {
+    font-size: 20px;
+    text-align: center;
+    color: #cccccc;
+}
+.main-title {
+    color:#00aaff;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing:2px;
+    text-transform: uppercase;
+
+    text-shadow:
+        0 0 5px #e9f1f3,
+        0 0 15px #000000,
+        0 0 30px #00c2fd,
+        0 0 50px rgb(0, 164, 247);
+
+    transition: 0.3s;
+}
+.no {
+    font-size: 45px;
+    font-weight: bold;
+    color: #00aaff;
+    text-align: center;
+    text-shadow: 0 0 20px rgba(0, 170, 255, 0.7);
+    margin-bottom: 10px;
+}
