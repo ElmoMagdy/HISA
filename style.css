@@ -451,3 +451,47 @@ body{
         text-align: center;
     }
 }
+
+/* 📱 إصلاح صفحة اللاعبين على الموبايل */
+
+@media (max-width: 600px) {
+
+    body {
+        overflow-x: hidden;
+        width: 100%;
+        margin: 0;
+    }
+
+    .players-container {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+
+        gap: 20px;
+        padding: 20px 10px;
+        margin: 0 !important;
+
+        box-sizing: border-box;
+    }
+
+    .player-card {
+        width: 90% !important;
+        max-width: 330px !important;
+        min-width: 0 !important;
+
+        margin: 0 auto !important;
+        box-sizing: border-box;
+    }
+
+    .player-card img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+
+        display: block;
+        box-sizing: border-box;
+    }
+}
