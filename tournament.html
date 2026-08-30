@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width",initial-scale=1.0>
+
+    <title>Tournaments</title>
+ <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+
+     <h1 class="main-title">Tournaments</h1>
+
+  <header>
+   <img src="logo.png.jpeg">
+    <button class="menu-button" id="menuButton">☰</button>
+
+     <nav class="menu">
+
+    <a href="index.html">Home</a>
+    <a href="news.html">News</a>
+    <a href="players.html">Players</a>
+    <a href="matches.html">Matches</a>
+    <a href="play match.html">Play Match</a>
+    <a href="tournament.html">Tournaments</a>
+    <a href="#">History of HISA</a>
+
+   </nav>
+
+   </header>
+
+<div class="tournament-buttons">
+
+    <button class="tournament-button" onclick="showTournament('champions')">
+        HISA Champions League
+    </button>
+
+    <div id="champions-options" class="stage-options">
+
+        <div class="stage-box">
+            <h3>Group Stage</h3>
+        </div>
+
+        <div class="stage-box">
+            <h3>Knockout Stage</h3>
+        </div>
+
+    </div>
+
+
+    <button class="tournament-button" onclick="showTournament('worldcup')">
+        HISA World Cup
+    </button>
+
+    <div id="worldcup-options" class="stage-options">
+
+        <div class="stage-box">
+            <h3>Group Stage</h3>
+        </div>
+
+        <div class="stage-box">
+            <h3>Knockout Stage</h3>
+        </div>
+
+    </div>
+
+</div>
+
+
+    </div>
+
+    <div id="tournament-content"></div>
+
+</section>
+
+<footer>
+    <p>Powered by: Mohamed Magdy</p>
+  </footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
