@@ -405,19 +405,88 @@ body{
     margin: 0;
     color: white;
 }
-/* Responsive Design */
+/* ===== Mobile Responsive ===== */
 
 * {
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
+html, body {
     width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
 }
 
-img {
-    max-width: 100%;
+/* Players container */
+.players-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Player card */
+.player-card {
+    width: 100%;
+    max-width: 280px;
+    margin: auto;
+}
+
+/* Images */
+.player-card img {
+    width: 100%;
     height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+/* ===== Tablet ===== */
+
+@media (max-width: 900px) {
+
+    .players-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* ===== Phone ===== */
+
+@media (max-width: 600px) {
+
+    .players-container {
+        width: 100%;
+        padding: 15px;
+        margin: 20px auto;
+
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .player-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .player-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+}
+@media(max-width:600px){
+    .player-card{
+        width:90%;
+    }
 }
