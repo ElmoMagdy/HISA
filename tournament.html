@@ -44,9 +44,52 @@
             <h3>Group Stage</h3>
         </div>
 
-        <div class="stage-box">
+        <div class="stage-box" onclick="toggleKnockout()">
             <h3>Knockout Stage</h3>
         </div>
+
+ <div class="knockout-rounds">
+
+    <button class="round-button" onclick="showMatches('quarter-matches')">
+        Quarter Final
+    </button>
+
+    <button class="round-button" onclick="showMatches('semi-matches')">
+        Semi Final
+    </button>
+
+    <button class="round-button" onclick="showMatches('third')">
+        Third Place
+    </button>
+
+    <button class="round-button" onclick="showMatches('final')">
+        Final
+    </button>
+
+</div>
+
+<div id="quarter-matches" class="matches-content">
+
+    <div class="matches-box">
+        <h2>Quarter Final</h2>
+
+        <div class="match">
+            Haider 5 - 6 Hassan
+        </div>
+
+        <div class="match">
+            Firas 6 - 4 Viner
+        </div>
+
+        <div class="match">
+            Mojtaba 9 - 1 Sasa
+        </div>
+
+        <div class="match">
+            Magdy 6 - 5 Hassan2
+        </div>
+    </div>
+</div>
 
     </div>
 

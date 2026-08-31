@@ -76,3 +76,34 @@ function showTournament(tournament) {
     // إظهار البطولة المختارة
     selected.style.display = "block";
 }
+
+function toggleKnockout() {
+
+    const rounds = document.querySelector(".knockout-rounds");
+
+    if (rounds.style.display === "flex") {
+        rounds.style.display = "none";
+    } else {
+        rounds.style.display = "flex";
+    }
+
+}
+
+function showMatches(matchId) {
+
+    const selectedMatch = document.getElementById(matchId);
+
+    // لو الماتشات ظاهرة بالفعل، نخفيها
+    if (selectedMatch.style.display === "block") {
+        selectedMatch.style.display = "none";
+        return;
+    }
+
+    // نخفي كل الماتشات
+    document.querySelectorAll(".matches-content").forEach(function(match) {
+        match.style.display = "none";
+    });
+
+    // نظهر الماتشات المطلوبة
+    selectedMatch.style.display = "block";
+}
