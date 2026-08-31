@@ -40,9 +40,10 @@
 
     <div id="champions-options" class="stage-options">
 
-        <div class="stage-box">
+         <div class="stage-box" onclick="togglegroup()">
             <h3>Group Stage</h3>
         </div>
+
 
         <div class="stage-box" onclick="toggleKnockout()">
             <h3>Knockout Stage</h3>
@@ -58,11 +59,11 @@
         Semi Final
     </button>
 
-    <button class="round-button" onclick="showMatches('third')">
+    <button class="round-button" onclick="showMatches('third-matches')">
         Third Place
     </button>
 
-    <button class="round-button" onclick="showMatches('final')">
+    <button class="round-button" onclick="showMatches('final-matches')">
         Final
     </button>
 
@@ -88,7 +89,113 @@
         <div class="match">
             Magdy 6 - 5 Hassan2
         </div>
+
     </div>
+</div>
+
+<div id="semi-matches" class="matches-content">
+
+    <div class="matches-box">
+        <h2>Semi Final</h2>
+
+        <div class="match">
+            Mojtaba 7 - 6 Firas
+        </div>
+
+        <div class="match">
+            Hassan 8 - 5 Magdy
+        </div>
+
+    </div>
+</div>
+
+<div id="third-matches" class="matches-content">
+
+    <div class="matches-box">
+        <h2>Third Place</h2>
+
+        <div class="match">
+            Firas 11 - 1 Magdy
+        </div>
+
+
+    </div>
+</div>
+
+<div id="final-matches" class="matches-content">
+
+    <div class="matches-box">
+        <h2>FINAL</h2>
+
+        <div class="match">
+            Mojtaba 8 - 7 Hassan
+        </div>
+
+    </div>
+</div>
+
+
+
+<div class="group-rounds">
+
+    <button class="round-button" onclick="showMatches('round1-matches')">
+        Round 1
+    </button>
+
+    <button class="round-button" onclick="showMatches('round2-matches')">
+        Round 2
+    </button>
+
+    <button class="round-button" onclick="showMatches('round3-matches')">
+        Round 3
+    </button>
+
+    <button class="round-button" onclick="showMatches('round4-matches')">
+        Round 4
+    </button>
+
+<div id="round1-matches" class="matches-content">
+
+    <div class="matches-box">
+        <h2>Round 1</h2>
+
+        <div class="match">
+            Haider 7 - 1 Body
+        </div>
+
+        <div class="match">
+            Ismail 5 - 3 Jounathan
+        </div>
+
+        <div class="match">
+            Sasa 3 - 0 Omar
+        </div>
+
+        <div class="match">
+            Hassan 5 - 3 Feras
+        </div>
+
+        <div class="match">
+            Magdy 2 - 6 Firas
+        </div>
+
+        <div class="match">
+            Vinr 3 - 5 Mojtaba
+        </div>
+
+        <div class="match">
+            Yahia 1 - 5 Hassan 2
+        </div>
+
+        <div class="match">
+            Saad 2 - 6 Anas
+        </div>
+
+    </div>
+</div>
+
+
+
 </div>
 
     </div>

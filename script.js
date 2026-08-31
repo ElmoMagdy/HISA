@@ -59,6 +59,7 @@ function showTournament(tournament) {
 
     }
 }
+
 function showTournament(tournament) {
 
     const selected = document.getElementById(tournament + "-options");
@@ -78,16 +79,33 @@ function showTournament(tournament) {
 }
 
 function toggleKnockout() {
+    const knockout = document.querySelector(".knockout-rounds");
+    const group = document.querySelector(".group-rounds");
 
-    const rounds = document.querySelector(".knockout-rounds");
+    group.style.display = "none";
 
-    if (rounds.style.display === "flex") {
-        rounds.style.display = "none";
+    if (knockout.style.display === "flex") {
+        knockout.style.display = "none";
     } else {
-        rounds.style.display = "flex";
+        knockout.style.display = "flex";
     }
-
 }
+
+
+function toggleGroup() {
+    const group = document.querySelector(".group-rounds");
+    const knockout = document.querySelector(".knockout-rounds");
+
+    knockout.style.display = "none";
+
+    if (group.style.display === "flex") {
+        group.style.display = "none";
+    } else {
+        group.style.display = "flex";
+    }
+}
+
+
 
 function showMatches(matchId) {
 
@@ -106,4 +124,35 @@ function showMatches(matchId) {
 
     // نظهر الماتشات المطلوبة
     selectedMatch.style.display = "block";
+}
+
+function togglegroup() {
+
+    const rounds = document.querySelector(".group-rounds");
+
+    if (rounds.style.display === "flex") {
+        rounds.style.display = "none";
+    } else {
+        rounds.style.display = "flex";
+    }
+
+}
+
+function showStage(stageId) {
+
+    // تخفي كل خيارات المراحل
+    document.querySelectorAll(".stage-options").forEach(function(stage) {
+        stage.style.display = "none";
+    });
+
+    // تجيب المرحلة اللي ضغطنا عليها
+    const selectedStage = document.getElementById(stageId);
+
+    // لو كانت ظاهرة نخفيها
+    if (selectedStage.style.display === "block") {
+        selectedStage.style.display = "none";
+    } else {
+        // نظهرها
+        selectedStage.style.display = "block";
+    }
 }

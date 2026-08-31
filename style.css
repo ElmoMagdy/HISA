@@ -552,3 +552,11 @@ body{
 .matches-box{
     transform: translateX(-225px)
 }
+
+.group-rounds {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
