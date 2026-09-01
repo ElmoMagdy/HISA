@@ -314,6 +314,15 @@ body{
 .purple{
     background:#5315b8;
 }
+    .yellow{
+    background:#dfd117;
+}
+    .brown{
+    background:#503607;
+}
+    .white{
+    background:#ddd0d0;
+}
 .coming-soon {
     font-size: 45px;
     font-weight: bold;
