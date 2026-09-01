@@ -312,7 +312,7 @@ body{
     background:#18b802;
 }
 .purple{
-    background:#5315b8;
+    background:#593397;
 }
     .yellow{
     background:#dfd117;
@@ -568,4 +568,138 @@ body{
     align-items: center;
     gap: 15px;
     margin-top: 20px;
+}
+
+/* =========================
+   RANKING TABLE
+========================= */
+
+.ranking-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 60px auto;
+    overflow-x: auto;
+}
+
+.ranking-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: rgba(10, 20, 70, 0.75);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+
+.ranking-table thead {
+    background: rgba(255, 20, 150, 0.9);
+}
+
+.ranking-table th {
+    padding: 18px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+/* Rows */
+
+.ranking-table td {
+    padding: 17px 15px;
+    font-size: 17px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Player name */
+
+.ranking-table td:nth-child(2) {
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Hover */
+
+.ranking-table tbody tr {
+    transition: 0.25s;
+}
+
+.ranking-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.12);
+    transform: scale(1.01);
+}
+
+/* Last row */
+
+.ranking-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Top 3 */
+
+.ranking-table tbody tr:nth-child(1) td:first-child {
+    color: gold;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.ranking-table tbody tr:nth-child(2) td:first-child {
+    color: silver;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.ranking-table tbody tr:nth-child(3) td:first-child {
+    color: #cd7f32;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .ranking-container {
+        width: 95%;
+        margin-top: 40px;
+    }
+
+    .ranking-table {
+        min-width: 750px;
+    }
+
+    .ranking-table th {
+        font-size: 16px;
+        padding: 15px 12px;
+    }
+
+    .ranking-table td {
+        font-size: 16px;
+        padding: 15px 12px;
+    }
+}
+.ranking-season-title {
+    text-align: center;
+    color: rgb(212, 194, 24);
+    font-size: 52px;
+    font-family: "Trebuchet MS", sans-serif;
+    font-weight: bold;
+    margin: 50px 0 25px;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(238, 238, 226, 0.877);
+}
+.ranking-season-title {
+    text-align: center;
+    color: rgb(219, 190, 24);
+    font-size: 54px;
+    font-family: georgia, serif;
+    letter-spacing: 2px;
+    margin: 50px 0 25px;
+    text-shadow: 0 0 10px rgba(241, 240, 234, 0.856);
 }
