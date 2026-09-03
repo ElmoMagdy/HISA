@@ -35,7 +35,7 @@
 <div class="tournament-buttons">
 
     <button class="tournament-button" onclick="showTournament('champions')">
-        HISA Champions League
+        HISA Champions League 2026
     </button>
 
     <div id="champions-options" class="stage-options">
@@ -318,20 +318,489 @@
 
 
     <button class="tournament-button" onclick="showTournament('worldcup')">
-        HISA World Cup
+        HISA World Cup 2026
     </button>
 
-    <div id="worldcup-options" class="stage-options">
+<div id="worldcup-options" class="stage-options">
 
-        <div class="stage-box">
-            <h3>Group Stage</h3>
-        </div>
+    <!-- Group Stage -->
+    <div class="stage-box" onclick="toggleWorldCupGroup()">
+        <h3>Group Stage</h3>
+    </div>
 
-        <div class="stage-box">
-            <h3>Knockout Stage</h3>
+
+    <!-- Knockout Stage -->
+    <div class="stage-box" onclick="toggleWorldCupKnockout()">
+        <h3>Knockout Stage</h3>
+    </div>
+
+
+    <!-- Knockout Rounds -->
+    <div class="worldcup-knockout-rounds">
+
+        <button class="round-button" onclick="showMatches('worldcup-quarter-matches')">
+            Quarter Final
+        </button>
+
+        <button class="round-button" onclick="showMatches('worldcup-semi-matches')">
+            Semi Final
+        </button>
+
+        <button class="round-button" onclick="showMatches('worldcup-third-matches')">
+            Third Place
+        </button>
+
+        <button class="round-button" onclick="showMatches('worldcup-final-matches')">
+            Final
+        </button>
+
+    </div>
+
+
+    <!-- Quarter Final Matches -->
+    <div id="worldcup-quarter-matches" class="matches-content">
+
+        <div class="matches-box">
+            <h2>Quarter Final</h2>
+
+            <div class="match">
+                Haider 5 - 3 Mojtaba
+            </div>
+
+            <div class="match">
+                Firas 6 - 4 Feras
+            </div>
+
+            <div class="match">
+                Jonathan 9 - 1 Ahmedz
+            </div>
+
+            <div class="match">
+                Ismail 7 - 3 Vinr
+            </div>
+
         </div>
 
     </div>
+
+
+    <!-- Semi Final Matches -->
+    <div id="worldcup-semi-matches" class="matches-content">
+
+        <div class="matches-box">
+            <h2>Semi Final</h2>
+
+            <div class="match">
+                Haider 7 - 6 Firas
+            </div>
+
+            <div class="match">
+                Ismail 7 - 6 Jonathan
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Third Place -->
+    <div id="worldcup-third-matches" class="matches-content">
+
+        <div class="matches-box">
+            <h2>Third Place</h2>
+
+            <div class="match">
+                Firas 10 - 0 Jonathan
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Final -->
+    <div id="worldcup-final-matches" class="matches-content">
+
+        <div class="matches-box">
+            <h2>FINAL</h2>
+
+            <div class="match">
+                Haider 9 - 6 Ismail
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Group Stage Rounds -->
+    <div class="worldcup-group-rounds">
+
+        <button class="round-button" onclick="showMatches('worldcup-group1-matches')">
+            Group A
+        </button>
+
+        <button class="round-button" onclick="showMatches('worldcup-group2-matches')">
+            Group B
+        </button>
+
+        <button class="round-button" onclick="showMatches('worldcup-group3-matches')">
+            Group C
+        </button>
+        <button class="round-button" onclick="showMatches('worldcup-group4-matches')">
+            Group D
+        </button>
+
+    </div>
+
+
+    <!-- Round 1 Matches -->
+    <div id="worldcup-group1-matches" class="matches-content">
+
+        <div class="matches-box">
+            <h2>Group A</h2>
+
+            <div class="match">
+                Haider 6 - 2 Feras
+            </div>
+
+            <div class="match">
+                Samad 3 - 5 Feras
+            </div>
+
+            <div class="match">
+                Samad 4 - 4 Haider
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Round 2 Matches -->
+    <div id="worldcup-group2-matches" class="matches-content">
+
+        <div class="matches-box">
+            <h2>Group B</h2>
+
+            <div class="match">
+                Vinr 3 - 5 Firas
+            </div>
+
+            <div class="match">
+                Firas 6 - 1 Sasa
+            </div>
+
+            <div class="match">
+                Vinr 7 - 1 Sasa
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Round 3 Matches -->
+    <div id="worldcup-group3-matches" class="matches-content">
+
+        <div class="matches-box">
+            <h2>Group C</h2>
+
+            <div class="match">
+                Ismail 5 - 3 Anas
+            </div>
+
+            <div class="match">
+                Jonathan 3 - 2 Anas
+            </div>
+
+            <div class="match">
+                Ismail 6 - 1 Jonathan
+            </div>
+
+        </div>
+
+    </div>
+
+       <!-- Round 4 Matches -->
+    <div id="worldcup-group4-matches" class="matches-content">
+
+        <div class="matches-box">
+            <h2>Group D</h2>
+
+            <div class="match">
+                Hassan 2 - 5 Mojtaba
+            </div>
+
+            <div class="match">
+                Ahmedz 3 - 5 Mojtaba
+            </div>
+
+            <div class="match">
+                Hassan 4 - 4 Ahmedz
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<button class="tournament-button" onclick="showTournament('clubworldcup')">
+    HISA Club World Cup 2025
+</button>
+
+<div id="clubworldcup-options" class="stage-options">
+
+    <!-- Group Stage -->
+    <div class="stage-box" onclick="toggleClubWorldCupGroup()">
+        <h3>Group Stage</h3>
+    </div>
+
+    <!-- Knockout Stage -->
+    <div class="stage-box" onclick="toggleClubWorldCupKnockout()">
+        <h3>Knockout Stage</h3>
+    </div>
+
+
+    <!-- Knockout Rounds -->
+    <div class="clubworldcup-knockout-rounds">
+
+        <button class="round-button" onclick="showMatches('clubworldcup-quarter-matches')">
+            Quarter Final
+        </button>
+
+        <button class="round-button" onclick="showMatches('clubworldcup-semi-matches')">
+            Semi Final
+        </button>
+
+        <button class="round-button" onclick="showMatches('clubworldcup-third-matches')">
+            Third Place
+        </button>
+
+        <button class="round-button" onclick="showMatches('clubworldcup-final-matches')">
+            Final
+        </button>
+
+    </div>
+
+
+    <!-- Group Stage Rounds -->
+    <div class="clubworldcup-group-rounds">
+
+        <button class="round-button" onclick="showMatches('clubworldcup-group1-matches')">
+            Group A
+        </button>
+
+        <button class="round-button" onclick="showMatches('clubworldcup-group2-matches')">
+            Group B
+        </button>
+
+        <button class="round-button" onclick="showMatches('clubworldcup-group3-matches')">
+            Group C
+        </button>
+
+        <button class="round-button" onclick="showMatches('clubworldcup-group4-matches')">
+            Group D
+        </button>
+
+    </div>
+
+
+    <!-- Quarter Final -->
+    <div id="clubworldcup-quarter-matches" class="matches-content">
+
+        <div class="matches-box">
+            <h2>Quarter Final</h2>
+
+            <div class="match">
+                Firas 4 - 6 Body
+            </div>
+
+            <div class="match">
+                Magdy 6 - 4 Ismail
+            </div>
+
+            <div class="match">
+                Haider 4 - 6 Jonathan
+            </div>
+
+            <div class="match">
+                Vinr 6 - 2 Mojtaba
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Semi Final -->
+    <div id="clubworldcup-semi-matches" class="matches-content">
+
+        <div class="matches-box">
+            <h2>Semi Final</h2>
+
+            <div class="match">
+                Body 9 - 4 Magdy
+            </div>
+
+            <div class="match">
+                Jonathan 4 - 9 Vinr
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Third Place -->
+    <div id="clubworldcup-third-matches" class="matches-content">
+
+        <div class="matches-box">
+            <h2>Third Place</h2>
+
+            <div class="match">
+                Magdy 3 - 0 Jonathan
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Final -->
+    <div id="clubworldcup-final-matches" class="matches-content">
+
+        <div class="matches-box">
+            <h2>FINAL</h2>
+
+            <div class="match">
+                Vinr 11 - 9 Body
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Group 1 -->
+    <div id="clubworldcup-group1-matches" class="matches-content">
+
+        <div class="matches-box">
+            <h2>Group A</h2>
+
+            <div class="match">
+                Hassan 0 - 3 Feras
+            </div>
+
+            <div class="match">
+                Sasa 4 - 4 Haider
+            </div>
+
+            <div class="match">
+                Haider 2 - 6 Hassan
+            </div>
+
+            <div class="match">
+                Sasa 4 - 4 Feras
+            </div>
+
+            <div class="match">
+                Hassan 0 - 3 Sasa
+            </div>
+
+            <div class="match">
+                Haider 6 - 2 Feras
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Group 2 -->
+    <div id="clubworldcup-group2-matches" class="matches-content">
+
+        <div class="matches-box">
+            <h2>Group B</h2>
+
+            <div class="match">
+                Firas 5 - 3 Body
+            </div>
+
+            <div class="match">
+                Youssef 0 - 3 Mojtaba
+            </div>
+
+            <div class="match">
+                Motaba 3 - 5 Firas
+            </div>
+
+            <div class="match">
+                Youssef 0 - 3 Body
+            </div>
+
+            <div class="match">
+                Firas 3 - 0 Youssef
+            </div>
+
+            <div class="match">
+                Mojtaba 5 - 3 Body
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Group 3 -->
+    <div id="clubworldcup-group3-matches" class="matches-content">
+
+        <div class="matches-box">
+            <h2>Group C</h2>
+
+            <div class="match">
+                Vinr 3 - 0 Scipre
+            </div>
+
+            <div class="match">
+                Vinr 5 - 3 Magdy
+            </div>
+
+            <div class="match">
+                Scipre 3 - 5 Magdy
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- Group 4 -->
+    <div id="clubworldcup-group4-matches" class="matches-content">
+
+        <div class="matches-box">
+            <h2>Group D</h2>
+
+            <div class="match">
+                Omar 3 - 5 Jonathan
+            </div>
+
+            <div class="match">
+                Omar 4 - 4 Ismail
+            </div>
+
+            <div class="match">
+                Jonathan 4 - 4 Ismail
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
 
 </div>
 

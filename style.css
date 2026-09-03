@@ -703,3 +703,347 @@ body{
     margin: 50px 0 25px;
     text-shadow: 0 0 10px rgba(241, 240, 234, 0.856);
 }
+.worldcup-knockout-rounds,
+.worldcup-group-rounds {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.clubworldcup-group-rounds,
+.clubworldcup-knockout-rounds {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.player-profile-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+
+    background: #7008083b;
+    color: rgb(0, 0, 0);
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.player-profile-button:hover {
+    transform: scale(1.05);
+}
+
+
+.player-profile {
+    text-align: center;
+    max-width: 700px;
+
+    margin: 50px auto;
+
+    padding: 30px;
+
+    border-radius: 20px;
+}
+
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+
+.profile-info {
+    margin-top: 25px;
+
+    padding: 20px;
+
+    border-radius: 15px;
+}
+
+/* Back Button */
+
+.back-to-players {
+    display: block;
+    margin: 20px auto;
+
+    padding: 12px 25px;
+
+    font-size: 16px;
+
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.back-to-players:hover {
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   PLAYER PROFILE PAGE
+========================= */
+
+.player-profile {
+    width: 90%;
+    max-width: 850px;
+
+    margin: 30px auto 60px;
+
+    text-align: center;
+}
+
+
+/* Player Header */
+
+.profile-image {
+    width: 170px;
+    height: 170px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 4px solid white;
+
+    margin-top: 20px;
+}
+
+
+.player-profile > h1 {
+    font-size: 38px;
+
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+
+.player-subtitle {
+    font-size: 17px;
+
+    opacity: 0.75;
+
+    margin-bottom: 35px;
+}
+
+
+/* Profile Sections */
+
+.profile-section {
+    margin-top: 25px;
+
+    padding: 25px;
+
+    background: rgba(226, 167, 5, 0.61);
+
+    border-radius: 18px;
+
+    text-align: left;
+
+    box-shadow: 0 8px 25px rgba(228, 225, 217, 0.664);
+}
+
+
+.profile-section h2 {
+    text-align: center;
+
+    margin-top: 0;
+
+    margin-bottom: 20px;
+
+    font-size: 26px;
+}
+
+
+/* Information Table */
+
+.info-table {
+    width: 100%;
+}
+
+
+.info-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    padding: 14px 18px;
+
+    border-bottom: 1px solid rgb(114, 19, 6);
+}
+
+
+.info-row:last-child {
+    border-bottom: none;
+}
+
+
+/* Left Information */
+
+.info-row span:first-child {
+    font-weight: bold;
+
+    opacity: 0.75;
+}
+
+
+/* Right Information */
+
+.info-row span:last-child {
+    text-align: right;
+
+    font-weight: bold;
+}
+
+
+/* Championships */
+
+.championship-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+.championship {
+    padding: 16px 20px;
+
+    background: rgba(216, 5, 5, 0.356);
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    font-size: 17px;
+
+    transition: 0.3s;
+}
+
+
+.championship:hover {
+    transform: scale(1.02);
+}
+
+
+/* Player Description */
+
+.player-description {
+    line-height: 1.8;
+
+    font-size: 17px;
+
+    text-align: center;
+}
+
+
+/* Back Button */
+
+.back-to-players {
+    display: block;
+
+    margin: 20px auto;
+
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.back-to-players:hover {
+    transform: scale(1.05);
+}
+
+/* =========================
+   PLAYER HEADER CARD
+========================= */
+
+.player-header-card {
+    width: 85%;
+    max-width: 750px;
+
+    margin: 40px auto;
+
+    padding: 40px 30px;
+
+    text-align: center;
+
+    background: rgba(238, 61, 61, 0.548);
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 35px rgba(248, 246, 246, 0.692);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+
+/* Image Container */
+
+.profile-image-container {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+/* Player Image */
+
+.player-header-card .profile-image {
+    width: 180px;
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid rgba(255, 255, 255, 0.9);
+
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.25);
+}
+
+
+/* Player Name */
+
+.player-header-card h1 {
+    margin-top: 20px;
+
+    margin-bottom: 8px;
+
+    font-size: 38px;
+
+    color: white;
+}
+
+
+/* Player Subtitle */
+
+.player-header-card .player-subtitle {
+    margin: 0;
+
+    font-size: 18px;
+
+    color: rgba(255, 255, 255, 0.7);
+}

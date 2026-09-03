@@ -70,9 +70,10 @@ function showTournament(tournament) {
         return;
     }
 
-    // إخفاء كل البطولات
-    document.getElementById("champions-options").style.display = "none";
-    document.getElementById("worldcup-options").style.display = "none";
+  // إخفاء كل البطولات
+document.getElementById("champions-options").style.display = "none";
+document.getElementById("worldcup-options").style.display = "none";
+document.getElementById("clubworldcup-options").style.display = "none";
 
     // إظهار البطولة المختارة
     selected.style.display = "block";
@@ -155,4 +156,55 @@ function showStage(stageId) {
         // نظهرها
         selectedStage.style.display = "block";
     }
+}
+
+function toggleWorldCupKnockout() {
+
+    const rounds = document.querySelector(".worldcup-knockout-rounds");
+
+    if (rounds.style.display === "flex") {
+        rounds.style.display = "none";
+    } else {
+        rounds.style.display = "flex";
+    }
+
+}
+function toggleWorldCupGroup() {
+
+    const rounds = document.querySelector(".worldcup-group-rounds");
+
+    if (rounds.style.display === "flex") {
+        rounds.style.display = "none";
+    } else {
+        rounds.style.display = "flex";
+    }
+
+}
+function toggleClubWorldCupKnockout() {
+
+    const rounds = document.querySelector(".clubworldcup-knockout-rounds");
+
+    if (rounds.style.display === "flex") {
+        rounds.style.display = "none";
+    } else {
+        rounds.style.display = "flex";
+    }
+
+}
+
+
+function toggleClubWorldCupGroup() {
+
+    const rounds = document.querySelector(".clubworldcup-group-rounds");
+
+    if (rounds.style.display === "flex") {
+        rounds.style.display = "none";
+    } else {
+        rounds.style.display = "flex";
+    }
+
+}
+
+function openPlayer(page) {
+    window.location.href = page;
 }
